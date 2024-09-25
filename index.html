@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake·Zone</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">BAKE·ZONE</a>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#Caracteristicas">Características</a></li>
+                <li><a href="#Comentarios">Comentarios</a></li>
+                <li><a href="#login"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <main>
+        <div class="banner"></div>
+
+        <!--Catalogo-->
+        <section class="container" id="catalogo">
+            <h1 class="title">Bake·Zone</h1>
+            <p class="title">Para cada receta, la bandeja perfecta.</p>
+
+            <div class="products-container">
+
+                <div class="product" data-name="p-1">
+                    <img src="assets/img/BandejaAluminio.jpeg" alt="BandejaAluminio" title="BandejaAluminio">
+                    <h3>Bandeja de aluminio</h3>
+                    <div class="price">$2.00</div>
+                </div>
+
+                <div class="product" data-name="p-2">
+                    <img src="assets/img/BandejaCeramica.jpeg" alt="BandejaCerámica" title="BandejaCerámica">
+                    <h3>Bandeja de Cerámica</h3>
+                    <div class="price">$25.95</div>
+                </div>
+
+                <div class="product" data-name="p-3">
+                    <img src="assets/img/BandejaGel.jpeg" alt="BandejaGel" title="BandejaGel">
+                    <h3>Bandeja de Gel</h3>
+                    <div class="price">$7.90</div>
+                </div>
+
+                <div class="product" data-name="p-4">
+                    <img src="assets/img/BandejaVidrio.webp" alt="BandejaVidrio" title="BandejaVidrio">
+                    <h3>Bandeja de Vidrio</h3>
+                    <div class="price">$10.95</div>
+                </div>
+
+                <div class="product" data-name="p-5">
+                    <img src="assets/img/BandejaMetal.webp" alt="BandejaMetal" title="BandejaMetal">
+                    <h3>Bandeja de Metal</h3>
+                    <div class="price">$8.99</div>
+                </div>
+
+                <div class="product" data-name="p-6">
+                    <img src="assets/img/BandejaGrafito.jpeg" alt="BandejaGrafito" title="BandejaGrafito">
+                    <h3>Bandeja de Grafito</h3>
+                    <div class="price">$9.95</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-preview">
+
+            <div class="preview" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <img src="assets/img/BandejaAluminio.jpeg" alt="BandejaAluminio">
+                <h3>Bandeja de Aluminio</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectet</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="assets/img/BandejaCeramica.jpeg" alt="BandejaCerámica">
+                <h3>Bandeja de cerámica</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet cons</p>
+                <div class="price">$25.95</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="assets/img/BandejaGel.jpeg" alt="BandejaGel">
+                <h3>Bandeja de gel</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum Nisi nesciunt accusamus veniam!</p>
+                <div class="price">$7.90</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="assets/img/BandejaVidrio.webp" alt="BandejaVidrio">
+                <h3>Bandeja de Vidrio</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem nesciunt accusamus. Nisi nesciunt accusamus veniam!</p>
+                <div class="price">$10.95</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="assets/img/BandejaMetal.webp" alt="BandejaMetal">
+                <h3>Bandeja de metal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat officia nostrum quas, ipsa
+                    ab mollitia neque enim provident, incidunt ratione. Cupiditate architecto consequuntur nesciunt
+                    accusamus. Nisi nesciunt accusamus veniam!</p>
+                <div class="price">$8.99</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="./assets/img/BandejaGrafito.jpeg" alt="BandejaGrafito">
+                <h3>Bandeja de grafito</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat officia nostrum quas, ipsa
+                    ab mollitia neque enim provident, incidunt ratione. Cupiditate architecto consequuntur nesciunt
+                    accusamus. Nisi nesciunt accusamus veniam!</p>
+                <div class="price">$9.95</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Caracteristicas-->
+        <section class="caracteristicas" id="Caracteristicas">
+            <h2>Características</h2>
+            <div>
+                <img src="assets/img/postre.webp" alt="BandejaVidrio" title="BandejaVidrio" width="225px"
+                    height="225px">
+                <p>
+                <ol>
+                    <li>Transparencia: El vidrio permite observar el proceso de cocción sin necesidad de abrir el horno,
+                        lo que ayuda a controlar mejor los tiempos de horneado.</li>
+                    <li>Resistencia a temperaturas extremas: Las bandejas de vidrio templado pueden soportar altas
+                        temperaturas de horno sin romperse, y también son seguras para almacenar alimentos en el
+                        refrigerador o congelador.</li>
+                    <li>No reacciona con alimentos: El vidrio es un material no poroso y químicamente inerte, lo que
+                        significa que no absorbe olores, sabores ni colores, y no libera sustancias tóxicas al
+                        calentarse, manteniendo los alimentos seguros y saludables.</li>
+                </ol>
+                </p>
+            </div> 
+            
+            <div>
+                <img src="assets/img/polloCeramica.jpg" alt="BandejaCeramica" title="BandejaCeramica" width="225px"
+                height="225px">
+                <p>
+                <ol>
+                    <li>Retención y distribución uniforme del calor: La cerámica es excelente para retener el calor, lo que
+                        permite que los alimentos se cocinen de manera lenta y uniforme. Esto es ideal para platos que
+                        requieren un horneado prolongado, como guisos, pasteles o carnes.</li>
+                    <li>Superficie antiadherente: Muchas bandejas de cerámica tienen un revestimiento esmaltado que actúa
+                        como una superficie antiadherente natural, lo que facilita la limpieza y evita que los alimentos se
+                        peguen durante la cocción.</li>
+                    <li>No reacciona con alimentos: Al igual que el vidrio, la cerámica es un material no poroso, lo que
+                        significa que no absorbe sabores, olores ni colores, y no interactúa con los alimentos, preservando
+                        el sabor original de los platos.</li>
+                </ol>
+                </p>
+            </div>
+
+            <div>
+                <img src="assets/img/galletasMetal.webp" alt="BandejaMetal" title="BandejaMetal" width="225px"
+                height="225px">
+                <p>
+                <ol>
+                    <li>Conductividad térmica superior: El metal, especialmente el acero inoxidable o el acero al carbono,
+                        es excelente para transferir el calor de manera rápida y uniforme, lo que garantiza una cocción
+                        eficaz y precisa, ideal para una gran variedad de alimentos, como galletas, panes, pasteles y
+                        carnes.</li>
+                    <li>Resistencia a altas temperaturas: Las bandejas de metal pueden soportar temperaturas muy altas, lo
+                        que las convierte en una excelente opción para todo tipo de recetas que requieren un horneado a alta
+                        temperatura. Son resistentes al calor del horno y se pueden usar en parrillas y asadores.</li>
+                    <li>Uso industrial o doméstico: Las bandejas de metal son una opción popular tanto en cocinas domésticas
+                        como profesionales, gracias a su resistencia, eficiencia y capacidad para soportar el uso diario.
+                    </li>
+                </ol>
+                </p>
+            </div>
+         
+            
+        </section>
+
+        <!--Comentarios-->
+        <div class="wrapper" id="Comentarios">
+            <h2>Comentarios</h2>
+            <div class="slider-contenedor">
+                <button id="prevBtn">Regresar</button>
+                <div class="slider-test activo">
+                    <p>Me encantan nuestras encimeras, así que me encanta esta bandeja de vidrio porque deja que
+                        nuestras encimeras brillen. Buen producto para la organización. Cumple su propósito y se ve
+                        bien.</p>
+                    <img src="assets/img/client.png" class="cliente" alt="client" title="client" width="100px" height="100px">
+                    <h3>Monsserath Castro</h3>
+                </div>
+        
+                <div class="slider-test">
+                    <p>La bandeja ceramica es el tamaño perfecto para una cazuela, una lasaña o un asado. Me emocionó
+                        que la comida horneada, accidentalmente cociné demasiado el asado, simplemente se deslizó.
+                        Excelente limpieza y buscaré esta marca nuevamente.</p>
+                    <img src="assets/img/client2.png" class="cliente" alt="client2" title="client2" width="100px"
+                        height="100px">
+                    <h3>Christopher Guevara</h3>
+                </div>
+        
+                <div class="slider-test">
+                    <p>Me encantó esta bandeja de metal, muy bien hecha. Ya tenía 3 de estos y son buenas bandejas y
+                        realmente aguantan bien. Se recomiendan la bandeja de metal.</p>
+                    <img src="assets/img/client3.png" class="cliente" alt="client3" title="client3" width="100px"
+                        height="100px">
+                    <h3>Elias Zelaya</h3>
+                </div>
+                <button id="nextBtn">Siguiente</button>
+            </div>
+        </div>
+    
+        <!--Login-->
+        <section id="login">
+            <div class="_container">
+                <div class="form-content">
+                    <h1 id="title">Registro</h1>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-field" id="nameInput">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Nombre" required>
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="correo" required>
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Contraseña">
+                            </div>
+                            <p>Olvidaste tu contraseña <a href="#">click aquí</a></p>
+                        </div>
+                        <div class="btn-field">
+                            <button id="signUp" type="button">Registro</button>
+                            <button id="signIn" type="button" class="disable">Login</button>
+                            <button id="signIn" type="button" class="disable">Enviar</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-row">
+            <div class="footer-links">
+                <h3>Compañia</h3>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#">Politicas De Privacidad</a></li>
+                    <li><a href="#">Afiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Envios</a></li>
+                    <li><a href="#">Status De Orden</a></li>
+                    <li><a href="#">Pago</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Sitios de interés</h3>
+                <ul>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">E-papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Siguenos</h3>
+                <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./assets/JS/Script.js"></script>
+</body>
+
+</html>
